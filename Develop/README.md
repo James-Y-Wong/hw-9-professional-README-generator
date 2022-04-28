@@ -1,13 +1,8 @@
-# Your-Project-Title
+# Professional README Generator
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+My motivation to build this project is "to have an easy way to generate a README file easily". Now this project will "prompt me to answer a few questions and generate a README file for me". This project solves "the time wasted when trying to copy and paste a template for each project and changing everything specific to my current project". 
 
 ## Table of Contents
 
@@ -49,4 +44,11 @@ Go the extra mile and write tests for your application. Then provide examples on
 
 ## Questions
 
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+- [username](https://github.com/James-Y-Wong)
+
+If you have additional questions, please do not hesitate to reach out to me via email.
+
+- jamesyeuwong@gmail.com
 
