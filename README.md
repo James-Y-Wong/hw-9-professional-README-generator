@@ -144,9 +144,9 @@ Have you spotted a typo, would you like to fix a link, or is there something you
 
 There is currently no test written for this application
 
-Here is the test written for this application
+There is a test written for this application
 
-[Test](https://test.com)
+- run command line: run npm test
 
 ## Questions
 

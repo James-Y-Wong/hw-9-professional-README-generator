@@ -63,8 +63,8 @@ const questions = [
         },
         {
             type: 'input',
-            message: 'What is the link to the test?',
-            name: 'link',
+            message: 'What command line to run test?',
+            name: 'command',
         },
         {
             type: 'input',
