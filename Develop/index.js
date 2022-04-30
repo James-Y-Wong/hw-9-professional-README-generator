@@ -4,8 +4,6 @@ const fs = require('fs');
 
 // TODO: Create an array of questions for user input
 const questions = [
-    inquirer
-    .prompt([
       {
         type: 'input',
         message: 'My motivation to build this project is _____',
@@ -78,14 +76,24 @@ const questions = [
             message: 'What is your email address?',
             name: 'email',
         },
-    ])
+    
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    const fileName = "README.md";
+    fs.writeFile(fileName, generateMarkdown(data), (err) =>
+    err ? console.log(err) : console.log('Success!')
+    );
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions),
+    .then(() => {
+        writeToFile(fileName, data)
+    })
+};
 
 // Function call to initialize app
 init();
