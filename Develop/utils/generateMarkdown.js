@@ -1,14 +1,24 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
 function renderLicenseBadge(data) {
-  let license = data.license;
-  if (license === 'MIT') {
-    license = 'MIT'
+  let licenseOption = data.license;
+  if (licenseOption === 'MIT') {
+    return licenseOption = 'MIT'
   };
-  if (license === 'Apache 2.0') {
-    license = 'Apache_2.0'
+  if (licenseOption === 'Apache 2.0') {
+    return licenseOption = 'Apache_2.0'
   };
-  
+  if (licenseOption === 'BSD 3-Clause') {
+    return licenseOption = 'BSD_3--Clause'
+  };
+  if (licenseOption === 'BSD 2-Clause') {
+    return licenseOption = 'BSD_2--Clause'
+  };
+  if (licenseOption === 'GPLv3') {
+    return licenseOption = 'GPLv3'
+  };
+  if (licenseOption === 'None') {
+    return licenseOption = 'Unlicense'
+  };
 };
 
 // TODO: Create a function that returns the license link
@@ -21,10 +31,9 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  renderLicenseBadge(data);
   return `# ${data.title}
 
-  [![License](https://img.shields.io/badge/License-${data.license}-blue.svg)](https://opensource.org/licenses/MIT)
+  [![License](https://img.shields.io/badge/License-${renderLicenseBadge(data)}-blue.svg)](https://opensource.org/licenses/MIT)
   
   ## Description
   
