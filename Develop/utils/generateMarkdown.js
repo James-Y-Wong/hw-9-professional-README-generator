@@ -22,8 +22,27 @@ function renderLicenseBadge(data) {
 };
 
 // TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(data) {
+  let licenseOption = data.license;
+  if (licenseOption === 'MIT') {
+    return licenseOption = 'https://opensource.org/licenses/MIT'
+  };
+  if (licenseOption === 'Apache 2.0') {
+    return licenseOption = 'https://opensource.org/licenses/Apache-2.0'
+  };
+  if (licenseOption === 'BSD 3-Clause') {
+    return licenseOption = 'https://opensource.org/licenses/BSD-3-Clause'
+  };
+  if (licenseOption === 'BSD 2-Clause') {
+    return licenseOption = 'https://opensource.org/licenses/BSD-2-Clause'
+  };
+  if (licenseOption === 'GPLv3') {
+    return licenseOption = 'https://www.gnu.org/licenses/gpl-3.0'
+  };
+  if (licenseOption === 'None') {
+    return licenseOption = 'https://choosealicense.com/licenses/unlicense'
+  };
+};
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -33,7 +52,7 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  [![License](https://img.shields.io/badge/License-${renderLicenseBadge(data)}-blue.svg)](https://opensource.org/licenses/MIT)
+  [![License](https://img.shields.io/badge/License-${renderLicenseBadge(data)}-blue.svg)](${renderLicenseLink(data)})
   
   ## Description
   
@@ -63,7 +82,7 @@ function generateMarkdown(data) {
   
   ## License
   
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![License](https://img.shields.io/badge/License-${renderLicenseBadge(data)}-blue.svg)](${renderLicenseLink(data)})
   
   Copyright (c) 2022 James Wong
   
