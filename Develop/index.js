@@ -5,11 +5,11 @@ const generateMarkdown = require('./utils/generateMarkdown')
 
 // TODO: Create an array of questions for user input
 const questions = [
-     {
-        type: 'input',
-        message: 'What is the title of your project?',
-        name: 'title',
-      }, 
+    //  {
+    //     type: 'input',
+    //     message: 'What is the title of your project?',
+    //     name: 'title',
+    //   }, 
     //   {
     //     type: 'input',
     //     message: 'My motivation to build this project is _____',
@@ -46,16 +46,16 @@ const questions = [
             choices: ['MIT', 'Apache 2.0', 'BSD 3-Clause', 'BSD 2-Clause', 'GPLv3', 'None'],
             name: 'license',
         },
-        // {
-        //     type: 'input',
-        //     message: 'What is the copyright year?',
-        //     name: 'year',
-        // },
-        // {
-        //     type: 'input',
-        //     message: 'Who is the copyright owner?',
-        //     name: 'owner',
-        // },
+        {
+            type: 'input',
+            message: 'What is the copyright year?',
+            name: 'year',
+        },
+        {
+            type: 'input',
+            message: 'Who is the copyright owner?',
+            name: 'owner',
+        },
         // {
         //     type: 'input',
         //     message: 'What is the repository name?',
