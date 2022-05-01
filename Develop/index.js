@@ -4,6 +4,11 @@ const fs = require('fs');
 
 // TODO: Create an array of questions for user input
 const questions = [
+     {
+        type: 'input',
+        message: 'What is the title of your project?',
+        name: 'title',
+      }, 
       {
         type: 'input',
         message: 'My motivation to build this project is _____',
@@ -58,7 +63,7 @@ const questions = [
         {
             type: 'list',
             message: 'Is there a test written for this application?',
-            choices: ['Yes', 'No'],
+            choices: ['yes', 'no'],
             name: 'test',
         },
         {
@@ -89,7 +94,7 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions),
+    inquirer.prompt(questions)
     .then(() => {
         writeToFile(fileName, data)
     })
