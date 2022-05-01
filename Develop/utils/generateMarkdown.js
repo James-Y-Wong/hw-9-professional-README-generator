@@ -1,4 +1,5 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
+// function to render badge at the top of README and in the license section
 function renderLicenseBadge(data) {
   let licenseOption = data.license;
   if (licenseOption === 'MIT') {
@@ -22,6 +23,8 @@ function renderLicenseBadge(data) {
 };
 
 // TODO: Create a function that returns the license link
+// function that adds link to the license chosen
+// URL used for badge so when click badge it takes to site
 function renderLicenseLink(data) {
   let licenseOption = data.license;
   if (licenseOption === 'MIT') {
@@ -45,6 +48,7 @@ function renderLicenseLink(data) {
 };
 
 // TODO: Create a function that returns the license section of README
+// function renders specific license info based on user input
 function renderLicenseSection(data) {
   let licenseOption = data.license;
   let year = data.year;
@@ -139,6 +143,7 @@ function renderLicenseSection(data) {
   };
 };
 
+// function that renders the Test section of README based on whether or not there is a test written for application
 function renderTestSection (data) {
   let testOption = data.test;
   let command = data.command;
@@ -152,6 +157,8 @@ function renderTestSection (data) {
 };
 
 // TODO: Create a function to generate markdown for README
+// function that generates markdown for README
+// used template literals to insert user inputs on prompt
 function generateMarkdown(data) {
   return `# ${data.title}
 
@@ -213,5 +220,5 @@ function generateMarkdown(data) {
   `;
 }
 
-
+// allows generateMarkdown to be called by index.js
 module.exports = generateMarkdown;
