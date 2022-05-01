@@ -139,6 +139,18 @@ function renderLicenseSection(data) {
   };
 };
 
+function renderTestSection (data) {
+  let testOption = data.test;
+  let command = data.command;
+  if (testOption === 'yes') {
+    return `There is a test written for this application. Run command line:
+  
+    - ${command}`
+  } else {
+    return "There is currently no test written for this application"
+  };
+};
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -187,11 +199,7 @@ function generateMarkdown(data) {
   
   ## Tests
   
-  There is currently no test written for this application
-  
-  There is a test written for this application
-  
-  - run command line: ${data.command}
+  ${renderTestSection(data)}
   
   ## Questions
   
