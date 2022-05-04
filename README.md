@@ -27,6 +27,8 @@
   Make sure you have all the prerequisites and packages installed. 
   
   - Run node index.js. Answer all the questions in the prompt. Below is a video demonstration on how to use the application.
+
+  
   
   ## License
   

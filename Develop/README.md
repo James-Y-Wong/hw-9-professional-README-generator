@@ -1,10 +1,10 @@
-# Professional README Generator
+# Professional README generator
 
   [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
   
   ## Description
   
-  My motivation to build this project is to have an simple way to generate a README file easily. Now this project will prompt me to answer a few questions and generate a README file for me. This README is generated using the application.. This project solves the time wasted when trying to copy and paste a template for each project and changing everything specific to my current project. 
+  My motivation to build this project is to have a simple way to generate a README file. Now this project will prompt me to answer a few questions and generate a README file for me. This project solves the time wasted when trying to copy and paste a template for each project and changing everything specific to my current project. 
   
   ## Table of Contents
   
@@ -26,7 +26,7 @@
   
   Make sure you have all the prerequisites and packages installed. 
   
-  - Run node index.js. Answer all the questions in the prompt. Below is a video demonstration on how to use the application.
+  - Run node index.js. Answer all of the questions in the prompt.
   
   ## License
   
