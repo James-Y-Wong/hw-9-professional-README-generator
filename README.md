@@ -28,7 +28,12 @@
   
   - Run node index.js. Answer all the questions in the prompt. Below is a video demonstration on how to use the application.
 
-  
+  - [Video Link](https://drive.google.com/file/d/1B6zxldiBXPWWfmjd53XWt7mS-MeA6r--/view)
+
+>Picture of prompt questions:
+>
+>![Prompt Screenshot](./images/prompt-screenshot.png)
+
   
   ## License
   
