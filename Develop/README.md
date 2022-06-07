@@ -1,10 +1,10 @@
-# Professional README Generator
+# E-Commerce Back End
 
   [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
   
   ## Description
   
-  My motivation to build this project is to have a simple way to generate a README file. Now this project will prompt me to answer a few questions and generate a README file for me. This project solves the time wasted when trying to copy and paste a template for each project and changing everything specific to my current project. 
+  My motivation to build this project is to have a back end for my E-Commerce website that uses the latest technologies. Now this project will allow me to query, create, change, and delete data from my database. This project solves the issue of being able to compete with other E-Commerce companies. 
   
   ## Table of Contents
   
@@ -20,13 +20,13 @@
   
   Prerequisites: Node.js
   
-  Packages: Inquirer
+  Packages: Express.js, MySQL2, Sequelize, dotenv
   
   ## Usage
   
   Make sure you have all the prerequisites and packages installed. 
   
-  - Run node index.js. Answer all of the questions in the prompt.
+  - First, enter MySQL terminal to source database. Then seed the database by running "npm run seed" in terminal. Run "npm start" to start the application. Peform, GET, POST, PUT, DEL requests in Insomnia to test
   
   ## License
   
@@ -46,7 +46,7 @@
   
   Have you spotted a typo, would you like to fix a link, or is there something you would like to suggest? Browse the source repository of this article and open a pull request. I will do my best to review your proposal in due time.
   
-  [Source Repository](https://github.com/James-Y-Wong/hw-9-professional-README-generator)
+  [Source Repository](https://github.com/James-Y-Wong/hw-13-ecommerce-back-end)
   
   ## Tests
   
